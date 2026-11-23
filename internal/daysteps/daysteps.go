@@ -57,6 +57,6 @@ func DayActionInfo(data string, weight, height float64) string {
 
 	calories, err := spentcalories.WalkingSpentCalories(steps, weight, height, walkDuration)
 
-	return fmt.Sprintf("Количество шагов: %v.\nДистанция составила %.2f км.\nВы сожгли %v ккал.", steps, distanceInKm, calories)
+	return fmt.Sprintf("Количество шагов: %v.\nДистанция составила %.2f км.\nВы сожгли %.2f ккал.", steps, distanceInKm, calories)
 	// в выводе дописать последний параметр каллорий
 }
